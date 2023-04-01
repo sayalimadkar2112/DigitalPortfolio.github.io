@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Project</title>
+      <link
+        rel="shortcut icon"
+        href="./image/favicon.ico"
+        type="image/x-icon"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </head>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <section id="navigation">
+      <div class="nav-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </section>
+    <div id="nav-content">
+      <div class="close-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <div class="wrapper">
+        <h2 class="section-heading">Menu</h2>
+        <nav>
+          <ul>
+            <li><a data-text="Home" href="./index.html#hero">Home</a></li>
+            <li><a data-text="About" href="./index.html#about">About</a></li>
+            <li>
+              <a data-text="Projects" href="./index.html#projects">Projects</a>
+            </li>
+            <li>
+              <a data-text="Testimonial" href="./index.html#testimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li><a data-text="Contact" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section id="projectD">
+      <div class="container">
+        <h2 class="section-heading" data-outline="Project Details">
+          Project Details
+        </h2>
+        <h1 class="subheading">
+          Forest Fire Detection Using Remote Sensing and Deep Learning
+        </h1>
+
+        <div class="abstract">
+          <h2>Abstract</h2>
+          <p>
+            Forest fires have caused considerable losses to ecologies,
+            societies, and economies worldwide. To minimize these losses and
+            reduce forest fires, modeling and predicting the occurrence of
+            forest fires are meaningful because they can support forest fire
+            prevention and management. In recent years, the convolutional neural
+            network (CNN) has become an important state-of-the-art deep learning
+            algorithm, and its implementation has enriched many fields.
+            Therefore, we proposed a spatial prediction model for forest fire
+            susceptibility using a CNN. In order to detect fire automatically, a
+            forest fire image recognition method based on convolutional neural
+            networks is proposed
+          </p>
+        </div>
+        <div class="intro">
+          <h2>Introduction</h2>
+          <p>
+            Every year, thousands of forest fire across the globe cause
+            disasters beyond measure and description. There is a huge amount of
+            very well studied solutions available for testing or even ready for
+            use to resolve this problem. People are using sensors to detect the
+            fire. But this case is not possible for large acres of forest. In
+            this paper, we proposed a new approach for fire detection, in which
+            modern technologies are used. In particular. The deep learning(open
+            CV) methods for recognition and detection of smoke and fire, based
+            on the still images the input from the cameras. Deep learning method
+            “convolution neural network” can be used for finding the amount of
+            fire. The accuracy is based on the algorithm which we are going to
+            use and the datasets and splitting them into train set and test set.
+            Forests are the protectors of earth’s ecological balance.
+            Unfortunately, the forest fire is usually observed when it has
+            already spread over a large area, making its control and stoppage
+            arduous and is impossible at times. The result is devastating loss
+            and irreparable damage to the environment and atmosphere (30% of
+            carbon dioxide (CO2) in the atmosphere comes from forest fires), in
+            addition to irreparable damage to the ecology (huge amounts of smoke
+            and carbon dioxide (CO2) in the atmosphere). The conventional method
+            is to prevent illegal logging. The goal of the system is to identify
+            the possible dangers by continuously recording the noise in the
+            forest, by processing segments of the recorded signals and decide
+            upon the nature of each of these segments[1].
+          </p>
+        </div>
+        <div class="ps">
+            <h2>Problem Statement</h2>
+            <p>Implementing forest fire detection system based on deep learning and remote sensing.</p>
+        </div>
+        <div class="obj">
+            <h2>Objectives</h2>
+           <nav>
+            <ul>
+                    <li>Collecting and preprocessing forest images through remote sensing for fire detection. </li>
+                    <li>  Implementing various deep learning-based techniques to detect fire.</li>
+                    <li>  Addressing various challenges in forest fire detection(pseudo color, false alarm). </li>
+                    <li>  Developing an accurate deep learning-based algorithm to detect forest fire. </li>
+                    <li>  Detect the speed of forest fire and the detection it is spreading and analyzing various features of  wildfire .</li>
+                   
+            </ul>
+           </nav>
+        </div>
+        <div class="sysds">
+            <h2>System Design</h2>
+            <img src="genBlk.png" alt="Generalized Block Diagram" title="Generalized Block Diagram">
+            <figcaption class="cap">Generalized Block Diagram</figcaption>
+            <p>This is the block diagram of our project. We obtain images using remote sensing and deep learning. Then we pre-process those images and feed those images to CNN model that we have developed. At time of testing if fire gets detected from the image we say fire is detected and further procedure will be done. If not we say that no fire detected. 
+            </p>
+            <img src="cnn.png" alt="CNN Block diagram" title="CNN Block diagram">
+            <figcaption class="cap">CNN Block diagram</figcaption>
+            <p>This is low resolution black and white object recognition block diagram. Input size is 32x32 images and these images were then convolved to 6 channels of 28x28 pixels . Which are then reduced to 14x14 using average pooling having same channel size. This is followed by another convolution which reduced to 10x10 with 16 channels. Resolution again gets half i.e., 5x5 by using average pooling . This is in the end followed by fully connected units to 10x84.</p>
+        </div>
+        <div class="method">
+            <h2>Methodolody</h2>
+            <p>In this forest fire system using deep learning and remote sensing we are going to detect the fire in the forest. In the methodology using the Aerial photography-based images which means it will take from the drones which will acquire the forest area of the desired region . The images will be used further to create dataset which will be needed in the neural network. Then the convolution is done by using the different types of filters like high pass, low pass and median filters etc. Then by doing the average pooling or maximum pooling according to which the features of the images will get extracted. To see the outcomes, we have to go through the different algorithms their advantages and drawbacks.
+
+            </p>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
